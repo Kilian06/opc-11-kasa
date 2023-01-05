@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom';
 import '../../styles/header.css'
+import '../../styles/headermobile.css'
 
 function Header(props) {
     return (

@@ -1,0 +1,30 @@
+.aboutStyle{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    min-height:calc(100vh - 110px - 209px);
+
+   }
+   
+   
+   
+   .aboutTopImg{
+   width: 1240px;
+   height: 223px;
+   background: #000000;
+   margin: auto;
+   border-radius: 25px;
+   }
+   
+   .aboutTopBg{
+   background: #000000;
+   mix-blend-mode: darken;
+   opacity: 0.3;
+   border-radius: 25px;
+   position: absolute;
+   width: 1240px;
+   height: 223px;
+   top: 0;
+   left: calc((100% - 1240px) / 2);
+       }

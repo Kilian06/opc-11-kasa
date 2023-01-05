@@ -1,0 +1,40 @@
+.erreurstyle{
+    width: 100%;
+    height: calc(100vh - 110px - 209px);
+    min-height: 621px;
+    color: #FF6060;
+    text-align: center;
+}
+@media screen and (max-width: 1240px) {
+    .erreurstyle{
+        height: calc(100vh - 90px - 209px);
+    } 
+}
+
+.erreurStyle404{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: min(45vw,288px);
+line-height: 142.6%;
+}
+
+.erreurStyleText{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 142.6%;
+}
+
+.erreurStyleLink{
+    margin-top: 50px;
+    text-decoration: none;
+    color: #FF6060;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+text-decoration-line: underline;
+}

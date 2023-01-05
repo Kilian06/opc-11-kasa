@@ -1,0 +1,22 @@
+@media screen and (max-width: 740px) {
+
+.cardHebergement{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.cardHebergementCover{
+    width: 100%;
+
+}
+.cardHebergementBg{
+    width: 100%;
+}
+
+.cardHebergementText{
+right: 5.88%;
+top: none;
+bottom: 9%;
+}
+}

@@ -1,0 +1,57 @@
+.accordionstyle {
+    max-width: 1023px;
+    margin: auto;
+    padding-top: 31px;
+  }
+  
+  .accordionstyleTitre {
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF6060;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+
+  .accordionstyleTitre:hover,
+  .active .accordionstyleTitre{
+    cursor: pointer;
+  }
+  
+  .accordionstyleContent{
+    visibility: hidden;
+    background-color: #F7F7F7;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+    text-align: left;
+    padding-left: 18px;
+  }
+  @media screen and (max-width: 1240px) {
+    .accordionstyleContent{
+        font-size: 18px;
+  }
+}
+  
+  .active .accordionstyleContent {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding-top: 36px;
+    padding-bottom: 19px;
+    opacity: 1;
+  }
