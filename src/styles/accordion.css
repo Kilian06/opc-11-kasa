@@ -56,3 +56,29 @@
     padding-bottom: 19px;
     opacity: 1;
   }
+
+
+  .barre{
+    display: flex;
+    height: 47px;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF6060;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .accordionstyleArrow{
+    padding-left: 10px;
+    transform: rotate(180deg);
+  }
+
+  .active .accordionstyleArrow{
+    padding-right: 10px;
+    transform: rotate(0deg);
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../../styles/accordion.css'
+import ArrowDeploy from '../../assets/verctorarrow.png'
 
 function Accordion({title, content}) {
     const [active, setActive] = useState(false)
@@ -10,7 +11,10 @@ function Accordion({title, content}) {
     if(Array.isArray(content)){
         return (
             <div className={`accordionstyle ${active && "active"}`}>
-                <div className="accordionstyleTitre" onClick={handleToggle}>{title}</div>
+                <div className="barre" onClick={handleToggle}>
+                <div className="accordionstyleTitre" >{title}</div>
+                <img className='accordionstyleArrow' src={ArrowDeploy}></img>
+                </div>
                 <ul className="accordionstyleContent">{content.map((equipement, index) => (
                     <li key={`${equipement}-${index}`}>{equipement}</li>
                 ))}</ul>            
@@ -18,8 +22,10 @@ function Accordion({title, content}) {
         );    }else{
         return (
             <div className={`accordionstyle ${active && "active"}`}>
-                <div className="accordionstyleTitre" onClick={handleToggle}>{title}</div>
-                <div className="accordionstyleContent">{content}</div>            
+                <div className="barre" onClick={handleToggle}>
+                <div className="accordionstyleTitre" >{title}</div>
+                <img className='accordionstyleArrow' src={ArrowDeploy}></img>
+                </div>                <div className="accordionstyleContent">{content}</div>            
             </div>
         );    }
 
