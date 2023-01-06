@@ -1,0 +1,41 @@
+.sliderStyle{
+position: relative;
+height: 415px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.sliderLeftArrow{
+    filter: contrast(0);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 42%;
+    left: 32px;
+    cursor: pointer;
+}
+
+.sliderRightArrow{
+    filter: contrast(0);
+    position: absolute;
+    top: 42%;
+    right: 32px;
+    cursor: pointer;
+}
+.sliderImage{
+height: 415px;
+width: 1240px;
+object-fit: cover;
+border-radius: 25px;
+}
+
+
+@media screen and (max-width: 1240px) {
+    .sliderImage{
+        height: 415px;
+    width: 95vw;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+}

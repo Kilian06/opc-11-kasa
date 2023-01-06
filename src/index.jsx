@@ -19,7 +19,7 @@ const root = createRoot(rootElement);
         <Routes>
           <Route path='/' element={<div><Header /><Home /> <Footer /></div>} />
           <Route path='/about' element={<div><Header /><About /> <Footer /></div>} />
-          <Route path='/detail' element={<div><Header /><Detail /> <Footer /></div>} />
+          <Route path={`/detail/:idHebergement`} element={<div><Header /><Detail /> <Footer /></div>} />
           <Route path='/*' element={<div><Header /><Erreur /> <Footer /></div>} />
         </Routes>
     </BrowserRouter>

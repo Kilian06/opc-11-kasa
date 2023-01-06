@@ -1,0 +1,124 @@
+.detailStyle {
+  width: 100%;
+  min-height:calc(100vh - 110px - 209px);
+  max-width: 1240px;
+  margin: auto;
+  color: #ff6060;
+}
+
+.detailTitre {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height:173.6%;
+}
+
+.detailLocation {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+
+.detailTitreHote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.detailHoteSectionDesktop {
+  display: flex;
+}
+
+.detailHoteName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  width: min-content;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.detailHoteImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.detailTagRating {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.detailListTag {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.detailRating {
+  width: 165px;
+  text-align: left;
+  background-image: url("../assets/star.svg"), url("../assets/star.svg"),
+    url("../assets/star.svg"), url("../assets/star.svg"),
+    url("../assets/star.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-position: 0 top, 33px top, 66px top, 99px top, 132px top;
+}
+.detailInfoDescEquip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.detailInfoDescEquipBox1,
+.detailInfoDescEquipBox2 {
+  width: 45%;
+}
+
+.detailHoteSectionMobile{
+  display: none
+}
+
+@media screen and (max-width: 1240px) {
+  .detailStyle {
+    min-height:calc(100vh - 90px - 209px);
+    width: 95%;
+  }
+
+  .detailHoteSectionDesktop{
+    display: none;
+  }
+  .detailTagRating{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .detailInfoDescEquip{
+    flex-direction: column;
+  }
+  .detailInfoDescEquipBox1, .detailInfoDescEquipBox2{
+    width: 100%;
+  }
+
+  .detailRatingHote{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .detailHoteSectionMobile{
+    display: flex;
+  }
+}
