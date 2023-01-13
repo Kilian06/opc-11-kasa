@@ -9,6 +9,8 @@ import Erreur from './pages/Erreur'
 import Detail from './pages/Detail'
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
+import Layout from './components/Layout';
+
 
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
@@ -17,10 +19,13 @@ const root = createRoot(rootElement);
       root.render(
         <BrowserRouter>
         <Routes>
-          <Route path='/' element={<div><Header /><Home /> <Footer /></div>} />
-          <Route path='/about' element={<div><Header /><About /> <Footer /></div>} />
-          <Route path={`/detail/:idHebergement`} element={<div><Header /><Detail /> <Footer /></div>} />
-          <Route path='/*' element={<div><Header /><Erreur /> <Footer /></div>} />
+          <Route path='/' element={<Layout><Home /></Layout>} />
+          {/* <Route path='/' element={<><Header /><Home /> <Footer /></>} /> */}
+
+          <Route path='/about' element={<Layout><About /></Layout>} />
+          <Route path={`/detail/:idHebergement`} element={<Layout><Detail /></Layout>} />
+          <Route path='/*' element={<Layout><Erreur /></Layout>} />
+
         </Routes>
     </BrowserRouter>
       );

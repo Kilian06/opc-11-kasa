@@ -6,10 +6,17 @@ import Tag from "../../components/tag";
 import Accordion from "../../components/accordion";
 import RatingStar from "../../components/star";
 import Slider from "../../components/slider";
+import Erreur from "../Erreur";
 
 function Detail(props) {
   var { idHebergement } = useParams();
   var hebergementInfo = loadFiles.find((item) => item.id === idHebergement);
+  if(!hebergementInfo){
+    return(
+      <Erreur />
+    )
+
+  }
   var title = hebergementInfo.title;
   var hostName = hebergementInfo.host.name;
   var hostPicture = hebergementInfo.host.picture;
