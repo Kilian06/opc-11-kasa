@@ -23,6 +23,22 @@ function Slider(hebergImage) {
         return null
     }
 
+    if( sliderData.photo.length === 1){
+        return(
+        <div className='sliderStyle'>
+            {sliderData.photo.map((slide, index) => {
+
+                return (
+                    <div key={index}>
+                        {index === current && (<img src={slide} alt={index} key={index} className="sliderImage"/>)}
+                        
+                    </div>
+                    
+                )
+            })}
+        </div>
+        )
+    }
     return (
         <div className='sliderStyle'>
             <img src={Arrow} className="sliderLeftArrow" alt='Fleche nav slider gauche' onClick={prevSlide}></img>
@@ -37,6 +53,7 @@ function Slider(hebergImage) {
                     
                 )
             })}
+            <p className='sliderCounter'>{(current + 1) + "/" + sliderData.photo.length}</p>
         </div>
     );
 }

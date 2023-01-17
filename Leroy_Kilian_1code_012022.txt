@@ -1,0 +1,2 @@
+Lien du repo Git : https://github.com/Kilian06/opc-11-kasa
+Lien du Vercel (build du repo) : https://opc-11-kasa.vercel.app/

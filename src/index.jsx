@@ -7,8 +7,6 @@ import Home from './pages/Home';
 import About from './pages/About'
 import Erreur from './pages/Erreur'
 import Detail from './pages/Detail'
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
 import Layout from './components/Layout';
 
 

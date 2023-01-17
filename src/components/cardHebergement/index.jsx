@@ -1,10 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function CardHebergement(props) {
+function CardHebergement(lien) {
+    const hebergement = lien.lien
     return (
-        <div>
-            
-        </div>
+<li className="cardHebergement" key={hebergement.id}>
+                        <Link to={`detail/${hebergement.id}`}>
+                        <img className='cardHebergementCover' src={hebergement.cover} alt="" />
+                        <div className='cardHebergementBg'></div>
+                        <p className='cardHebergementText'>{hebergement.title}</p>
+                        </ Link>
+                        </li>
     );
 }
 
